@@ -1,6 +1,6 @@
-import { Request, Response } from "express";
+const express = require("express") ;
 
-import nodemailer from "nodemailer";
+const nodemailer = require("nodemailer") ;
 
 const transporter = nodemailer.createTransport({
   service: "Gmail",
@@ -10,7 +10,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-export const submitForm = async (req: Request, res: Response) => {
+ const submitForm = async (req ,res) => {
   const { name, email, message } = req.body;
 
   const mailOptions = {
@@ -46,3 +46,6 @@ export const submitForm = async (req: Request, res: Response) => {
   //     }
   //   });
 };
+
+
+module.exports = {submitForm}

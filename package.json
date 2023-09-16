@@ -1,21 +1,15 @@
 {
   "name": "node-js-rest-api-with-typescript-and-prisma",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "author": "Collins Kiprono Kirui <101986591+iamkiprono@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon server.ts"
+    "dev": "nodemon server.ts",
+    "start": "node server.js"
   },
-  "devDependencies": {
-    "@types/express": "^4.17.17",
-    "@types/node": "^20.5.7",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.2.2"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "@types/cors": "^2.8.13",
-    "@types/nodemailer": "^6.4.9",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",

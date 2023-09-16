@@ -1,12 +1,12 @@
-import express, { Express, Request, Response } from "express";
-import dotenv from "dotenv";
+const  express= require ("express") 
+const  dotenv= require ("dotenv") 
 
-import mailRoutes from "./routes/mailer.routes";
-import cors from "cors"
+const  mailRoutes = require("./routes/mailer.routes") ;
+const cors = require("cors") 
 
-dotenv.config();
 
-const app: Express = express();
+
+const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(express.json());
